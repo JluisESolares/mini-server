@@ -1,0 +1,37 @@
+import globals from 'globals';
+import pluginJs from '@eslint/js';
+
+
+export default [
+  {files: ['**/*.js'], languageOptions: {sourceType: 'commonjs'}},
+  {languageOptions: { globals: globals.node }},
+  pluginJs.configs.recommended,
+  {
+    rules: {
+      'no-var': 'error', // Prohibir el uso de var
+      //"semi": ["error", "always"], // Requiere punto y coma
+      'quotes': ['error', 'single'], // Fuerza comillas simples
+    }
+  },
+
+  /*{
+    rules: {
+      "no-var": "error",
+      "prefer-const": "error",
+      "semi": ["error", "always"],
+      "quotes": ["error", "single"],
+      "space-before-blocks": "error",
+      "no-trailing-spaces": "error",
+      "prefer-arrow-callback": "error",
+      "space-in-parens": ["error", "never"],
+      "no-unused-vars": "warn",
+      "eqeqeq": ["error", "always"],
+      "sort-keys": "error",
+      "space-infix-ops": "error",
+      "one-var": ["error", "never"],
+      "max-len": ["warn", { "code": 80 }],
+      "indent": ["error", 2],
+      "no-mixed-operators": "error"
+    }
+  }*/
+];

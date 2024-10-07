@@ -1,0 +1,14 @@
+
+GET http://localhost:3001/
+
+###
+
+GET http://localhost:3001/notes
+
+###
+
+GET http://localhost:3001/notes/1
+
+###
+
+GET http://localhost:3001/notes/2
