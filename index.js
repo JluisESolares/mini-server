@@ -10,7 +10,7 @@ app.use(cors())
 //ejecutando el body parser
 app.use(express.json())
 //usando nuestro custom middleware
-app.use(logger)
+//app.use(logger)
 
 
 
