@@ -33,6 +33,12 @@ let notes = [
     content: 'Repasar los retos de JS de midudev',
     date: new Date(),
     important: true,
+  },
+  {
+    id: 4,
+    content: 'testing hithub',
+    date: new Date(),
+    important: false,
   }
 ];
 
